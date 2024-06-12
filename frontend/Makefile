@@ -1,5 +1,5 @@
 build:
-	docker build -t front .
+	cp ../.env .env && docker build -t front .
 
 run:
 	docker run -it -d --init -p 8000:8000 --name front front

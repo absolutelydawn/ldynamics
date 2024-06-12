@@ -13,7 +13,7 @@ COPY . .
 # Step 5 : Install dependencies
 RUN npm init -y
 RUN npm install
-RUN npm install -g nodemon
+RUN npm install -g nodemon dotenv
 
 # Step 6 : Open port
 EXPOSE 8000
